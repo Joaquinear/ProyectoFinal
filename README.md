@@ -11,6 +11,6 @@ se esta utilizando probando el sistema de mercado libre
 <br>Y mercado libre muestra filtro de "Nuevos y Usados"
 <br>Entonces mercado libre mostrara una lista de items que contengan los que se introdujo en el buscador
 <br>
-El test case se puede correr directamente desde el archivo ===> testSuiteTechTest.xml <=== correra todos los test del packege "pagetest"
+El testcase se puede correr directamente desde el archivo ===> testSuiteTechTest.xml <=== correra todos los test del packege "pagetest"
 <br>
-se utilizo Selenium web drive, con arquitectura Screemplay en lenguaje JAVA y para los reportes extentreports.
+Se utilizó Selenium webdriver, con arquitectura Screenplay en lenguaje JAVA y para los reportes extent reports.
