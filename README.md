@@ -13,4 +13,6 @@ se esta utilizando probando el sistema de mercado libre
 <br>
 El testcase se puede correr directamente desde el archivo ===> testSuiteTechTest.xml <=== correra todos los test del packege "pagetest"
 <br>
+El reporte se puede visualizar en el directory Report.
+<br>
 Se utilizó Selenium webdriver, con arquitectura Screenplay en lenguaje JAVA y para los reportes extent reports.
