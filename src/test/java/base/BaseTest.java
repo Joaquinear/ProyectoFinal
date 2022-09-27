@@ -53,7 +53,7 @@ public class BaseTest {
                 ScreenShotHelper.takeScreenShotAndAdToHTMLReport(driver,Status.FAIL,"Failed Screen");
             }
             else {
-                ScreenShotHelper.takeScreenShotAndAdToHTMLReport(driver,Status.PASS,"Failed Screen");
+                ScreenShotHelper.takeScreenShotAndAdToHTMLReport(driver,Status.PASS,"Screen capture");
             }
         }catch (Exception e){
             e.printStackTrace();

@@ -2,7 +2,7 @@
 <suite name="TestSuitCompleto" verbose="1" >
     <test name="TestFlujoCompleto">
         <packages>
-            <package name="test.*" />
+            <package name="pagetest.*" />
         </packages>
     </test>
 </suite>

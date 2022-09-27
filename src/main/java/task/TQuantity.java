@@ -1,13 +1,12 @@
 package task;
 
-import actions.GetText;
-import org.openqa.selenium.By;
+import actions.Text;
 import org.openqa.selenium.WebDriver;
 import ui.UiMercadoLibre;
 
 public class TQuantity {
     public static boolean itemsAvailableNews(WebDriver driver){
-        String newsItems = GetText.getText(driver, UiMercadoLibre.newQuantity);
+        String newsItems = Text.getText(driver, UiMercadoLibre.newQuantity);
         System.out.println(newsItems);
         char [] cadenaNuevos = newsItems.toCharArray();
         String n = "";
@@ -25,7 +24,7 @@ public class TQuantity {
     }
 
     public static boolean itemsAvailableUsed(WebDriver driver){
-        String newsItems = GetText.getText(driver, UiMercadoLibre.usedQuantity);
+        String newsItems = Text.getText(driver, UiMercadoLibre.usedQuantity);
         System.out.println(newsItems);
         char [] cadenaNuevos = newsItems.toCharArray();
         String n = "";
