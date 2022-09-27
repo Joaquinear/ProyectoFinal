@@ -13,4 +13,4 @@ se esta utilizando probando el sistema de mercado libre
 <br>
 El test case se puede correr directamente desde el archivo ===> testSuiteTechTest.xml <=== correra todos los test del packege "pagetest"
 <br>
-se utilizo Selenium web drive, con arquitectura Screemplay en lenguaje JAVA.
+se utilizo Selenium web drive, con arquitectura Screemplay en lenguaje JAVA y para los reportes extentreports.
