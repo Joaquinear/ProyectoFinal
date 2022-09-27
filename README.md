@@ -3,7 +3,7 @@ Este proyecto es una prueba tecnica para el banco ganadero
 se esta utilizando probando el sistema de mercado libre
 Dado Cliente quiere realizar una compra en mercado libre
 Entonces tendra que acceder desde su navegador, por google
-Y escribir en el buscador "Mercado libre"
+<br>Y escribir en el buscador "Mercado libre"
 Y presionar enter
 Y hacer click sobre el 1re resultado
 Y seleccionar pais 
