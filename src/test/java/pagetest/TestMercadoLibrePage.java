@@ -33,7 +33,7 @@ public class TestMercadoLibrePage extends BaseTest {
         Assert.assertTrue(TQuantity.itemsAvailableNews(driver));
         if(TQuantity.itemsAvailableNews(driver)){
             Click.on(driver,UiMercadoLibre.newQuantity);
-            Assert.assertEquals("Nuevo", Text.getText(driver,UiMercadoLibre.filterOption));
+            Assert.assertEquals("Nuevo", StateItem.getText(driver));
         }else{
             Assert.assertEquals(searchString.get(0), Text.getText(driver,UiMercadoLibre.resultSearch));
         }
@@ -51,7 +51,7 @@ public class TestMercadoLibrePage extends BaseTest {
         if(TQuantity.itemsAvailableUsed(driver)){
             ClickNonClickable.Click(driver,UiMercadoLibre.usedQuantity);
             System.out.println(StateItem.getText(driver));
-            Assert.assertEquals("Usado", Text.getText(driver,UiMercadoLibre.filterOption));
+            Assert.assertEquals("Usado", StateItem.getText(driver));
         }else {
             Assert.assertEquals("la cantidad  de items era menor que 3",Text.getText(driver,UiMercadoLibre.usedQuantity));
         }
@@ -113,7 +113,7 @@ public class TestMercadoLibrePage extends BaseTest {
         Click.on(driver,UiMercadoLibre.cacheBtn);
         if(TQuantity.itemsAvailableUsed(driver)){
             Click.on(driver,UiMercadoLibre.usedQuantity);
-            Assert.assertEquals("Usado", Text.getText(driver,UiMercadoLibre.filterOption));
+            Assert.assertEquals("Usado", StateItem.getText(driver));
         }else {
             Assert.assertEquals("la cantidad  de items era menor que 3",Text.getText(driver,UiMercadoLibre.usedQuantity));
         }
