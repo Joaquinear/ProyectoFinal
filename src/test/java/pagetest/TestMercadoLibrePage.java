@@ -4,6 +4,7 @@ import actions.*;
 import base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import task.StateItem;
 import task.TGoogleClick;
 import task.TGoogleSearch;
 import task.TQuantity;
@@ -49,6 +50,7 @@ public class TestMercadoLibrePage extends BaseTest {
         //Assert.assertTrue(TQuantity.itemsAvailableNews(driver));
         if(TQuantity.itemsAvailableUsed(driver)){
             ClickNonClickable.Click(driver,UiMercadoLibre.usedQuantity);
+            System.out.println(StateItem.getText(driver));
             Assert.assertEquals("Usado", Text.getText(driver,UiMercadoLibre.filterOption));
         }else {
             Assert.assertEquals("la cantidad  de items era menor que 3",Text.getText(driver,UiMercadoLibre.usedQuantity));
@@ -64,7 +66,8 @@ public class TestMercadoLibrePage extends BaseTest {
         Click.on(driver,UiMercadoLibre.cacheBtn);
         if(TQuantity.itemsAvailableNews(driver)){
             Click.on(driver,UiMercadoLibre.newQuantity);
-            Assert.assertEquals("Nuevo", Text.getText(driver,UiMercadoLibre.filterOption));
+            System.out.println(StateItem.getText(driver));
+            Assert.assertEquals("Nuevo", StateItem.getText(driver));
         }else{
             Assert.assertEquals("la cantidad  de items era menor que 3",Text.getText(driver,UiMercadoLibre.newQuantity));
         }
@@ -80,7 +83,7 @@ public class TestMercadoLibrePage extends BaseTest {
         //Assert.assertTrue(TQuantity.itemsAvailableUsed(driver));
         if(TQuantity.itemsAvailableUsed(driver)){
             Click.on(driver,UiMercadoLibre.usedQuantity);
-            Assert.assertEquals("Usado", Text.getText(driver,UiMercadoLibre.filterOption));
+            Assert.assertEquals("Usado", StateItem.getText(driver));
         }else {
             Assert.assertEquals("la cantidad  de items era menor que 3",Text.getText(driver,UiMercadoLibre.usedQuantity));
         }
@@ -95,7 +98,7 @@ public class TestMercadoLibrePage extends BaseTest {
         Click.on(driver,UiMercadoLibre.cacheBtn);
         if(TQuantity.itemsAvailableNews(driver)){
             Click.on(driver,UiMercadoLibre.newQuantity);
-            Assert.assertEquals("Nuevo", Text.getText(driver,UiMercadoLibre.filterOption));
+            Assert.assertEquals("Nuevo", StateItem.getText(driver));
         }else{
             Assert.assertEquals("la cantidad  de items era menor que 3",Text.getText(driver,UiMercadoLibre.newQuantity));
         }
