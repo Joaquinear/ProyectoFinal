@@ -1,5 +1,4 @@
 # TestMercadoLibre
-Este proyecto es una prueba tecnica para el banco ganadero
 se esta utilizando probando el sistema de mercado libre
 <br>Dado Cliente quiere realizar una compra en mercado libre
 <br>Cuando tendra que acceder desde su navegador, por google
