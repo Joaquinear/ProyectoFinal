@@ -1,5 +1,5 @@
 # TestMercadoLibre
-se esta utilizando probando el sistema de mercado libre
+Se esta probando el sistema de mercado libre
 <br>Dado Cliente quiere realizar una compra en mercado libre
 <br>Cuando tendra que acceder desde su navegador, por google
 <br>Y escribir en el buscador "Mercado libre"
