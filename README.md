@@ -8,6 +8,6 @@ Tecnologias:
 <br>Selenium
 <br>Cucumber
 <br>Allure report
-<br>Patron de diseño <p>ScreemPlaym</p>
+<br>Patron de diseño <b>ScreemPlaym</b>
 
 <br> Se tienen 15 test cases diferentes.
