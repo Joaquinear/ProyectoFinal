@@ -1,8 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="TestSuitCompleto" verbose="1" >
+    <parameter name="url" value="https://www.google.com/"></parameter>
     <test name="TestFlujoCompleto">
-        <packages>
-            <package name="pagetest.*" />
-        </packages>
+        <classes>
+            <class name="Runners.Run"/>
+        </classes>
     </test>
 </suite>

@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import ui.UiMercadoLibre;
 
 public class TQuantity {
-    public static boolean itemsAvailableNews(WebDriver driver){
+    public static int itemsAvailableNews(WebDriver driver){
         String newsItems = Text.getText(driver, UiMercadoLibre.newQuantity);
         System.out.println(newsItems);
         char [] cadenaNuevos = newsItems.toCharArray();
@@ -16,14 +16,14 @@ public class TQuantity {
             }
         }
         int valor = Integer.parseInt(n);
-
-        if(valor >=3)
-            return true;
-        return false;
+        return  valor;
+//        if(valor >=1)
+//            return true;
+//        return false;
      //return true;
     }
 
-    public static boolean itemsAvailableUsed(WebDriver driver){
+    public static int itemsAvailableUsed(WebDriver driver){
         String newsItems = Text.getText(driver, UiMercadoLibre.usedQuantity);
         System.out.println(newsItems);
         char [] cadenaNuevos = newsItems.toCharArray();
@@ -35,9 +35,10 @@ public class TQuantity {
         }
         int valor = Integer.parseInt(n);
 
-        if(valor >=3)
-            return true;
-        return false;
+        return valor;
+//        if(valor >=3)
+//            return true;
+//        return false;
         //return true;
     }
 }
