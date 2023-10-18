@@ -3,4 +3,5 @@
 /workspace.xml
 target
 target/*
-allure-results/
+allure-results/*
+resource/*
