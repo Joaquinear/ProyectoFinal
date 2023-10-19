@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 
 
 @CucumberOptions(
-        features = "src/test/java/features/testLogin.feature",
+        features = "src/test/java/features/testLoginNewman.feature",
         glue = {"stepsDefinitions"},
         //tags = {"@pruebasDev"},
         plugin = { "pretty", "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"}
