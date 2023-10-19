@@ -38,7 +38,8 @@ public class BaseTest {
         //driver = WebdriverFactory.getdriver(browser,url);
         driver.manage().window().maximize();
         //driver.get(url);
-        driver.get("https://www.google.com/");
+        //driver.get("https://www.google.com/");
+        driver.get("https://gestor-epn.preunir.net/");
     }
 
     //@After
